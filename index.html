@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Freshly Grazed | Web &amp; Mobile Development</title>
+        <link rel="shortcut icon" href="favicon.png" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+
+        <link rel="stylesheet" type="text/css" href="/font-awesome-4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/tooltipster-master/css/tooltipster.css">
+        <link rel="stylesheet" type="text/css" href="/tooltipster-master/css/themes/tooltipster-shadow.css">
+        <link rel="stylesheet" type="text/css" href="animate.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+
+        <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9:all.js"></script>
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="/tooltipster-master/js/jquery.tooltipster.min.js"></script>
+
+    </head>
+<body>
+        
+<header id="header" class="unhinge">
+    <div class="wrap">
+        <a href="" class="logo">
+            <img src="FG_logo.png" alt=""/>
+            <span class="header tooltip" title="Click to replay intro">Freshly Grazed</span>
+        </a>
+        <nav class="sweepLeft">
+            
+            <a id="home" href="#tab0" class="tab tooltip" title="Hello, World!"><i class="fa fa-2x fa-globe"></i></a>
+            
+            <a href="#tab1" class="tab tooltip" title="Development"><i class="fa fa-2x fa-laptop"></i></a>
+            
+            <a href="#tab2" class="tab tooltip" title="Services"><i class="fa fa-2x fa-flask"></i></a>
+            
+            <a href="#tab3" class="tab tooltip" title="Vision"><i class="fa fa-2x fa-lightbulb-o"></i></a>
+                                    
+            <a id="contact" href="#tab4" class="tab bt tooltip" title="Contact"><i class="fa fa-2x fa-comment-o"></i></a>
+        </nav>
+    </div>
+</header>
+
+<article class="collapse">
+    <section  id="hero" class="primary animatedFadeInUp">
+        <a id="tab0" class="anchor"></a>
+        <div class="wrap saw">
+            <h4 class="slogan"><i>We create apps for the modern web</i></h4>
+        </div>
+    </section>
+
+    <section class="">
+        <a id="tab1" class="anchor"></a>
+        <div class="wrap saw reverse compensate">
+            <div class="animatedFadeIn">
+                <br>
+                <img class="imgIcon" src="responsive_test.png" alt="">
+
+                <h2>Web Apps &amp; Mobile Development</h2>
+                <p>We build software that sets the standard for what can be accomplished in technology today. The continuous cycle of user engagement within the <i> mobile, web </i> and <i>smartwear </i> space is expanding rapidly. It is within this space that our expertise is greatly beneficial. Not only do we take pride in the code we write, but also in how our work positively impacts the lives of many people.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="secondary">
+        <a id="tab2" class="anchor"></a> 
+              <div class="animatedFadeIn">
+                    <i class="fa fa-flask fa-jumbo"></i>
+
+        <div class="wrap saw">
+                <h2>Our Services</h2>
+                <p>We deliver high quality web applications to an ever growing market. Our mission is to provide our clients with the best solution possible, paying close attention to their business needs.</p>
+                <h2>Our Team</h2>
+                <p>The key to our success is working with talented individuals who share the same passion for <i>all things technology</i>. Our team of developers are capable of deploying concurrent projects on a global scale.<p>
+            </div>
+        </div>
+    </section>
+
+<!--     <section class="video-container">
+        <a id="tab3" class="anchor"></a>   
+    </section> -->
+    
+    <section class="video-container">
+        <a id="tab3" class="anchor"></a>   
+        <div class="animatedFadeIn wrap-ctr">
+            <h2>The possibilities are infinite</h2>
+            <p>We are designers, programmers, engineers, and futurists. Our guiding philosophy is to always <i>Think Forward</i>.</p>
+            <br>
+            <img src="FG_logo_constellation.png" alt="" />
+        </div>
+    </section>
+
+    <section>
+        <a id="tab4" class="anchor" id="top"></a>   
+        <div class="wrap  full center">
+            <div class="animatedFadeIn">
+                <h2>Let's Connect</h2>
+                <p>Whether you're a small startup or a large scale company, we are your mission control!</p>
+                <p>( or if you're a techie like us, let's connect! )</p>
+                <h3><a href="mailto:hi@freshlygrazed.com">hi@freshlygrazed.com</a></h3>
+                <br><br><br>
+                <div class="adjust"><a class="destroy bt" title="DO NOT Disconnect !!!"><i class="fa fa-2x fa-power-off"></i></a></div>
+            </div>
+        </div>
+    </section>
+
+</article>
+
+<footer>
+    <div class="wrap">
+        <div class="animatedFadeIn">
+
+        <nav>
+            <a class="twitter-logo tooltip" title="@freshlygrazed" target="_blank" href="https://twitter.com/FreshlyGrazed"></a>
+            <a class="github-logo tooltip" title="github" target="_blank" href="https://github.com/Tumne"></a>
+        </nav>
+        </div>
+    </div>
+</footer>
+        <!-- <img src="/assets/images/crocodile.jpg" alt="" style="display:none" /> -->
+
+        <script type="text/javascript">
+
+            function animateIntro (){
+                $('.animatedFadeInUp').css('visibility','visible').addClass('fadeInUp');
+                $('.animatedFadeIn').css('visibility','visible').addClass('fadeInUp');  
+
+                $('.logo').css('visibility', 'visible').addClass('animated fadeIn');
+                $('.sweepLeft').css('visibility', 'visible').addClass('animated fadeInRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                    $('#home').addClass('animated swing').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                        $(this).removeClass('animated swing').addClass('selected');
+                    });
+                });
+                $('.slogan').css('visibility', 'visible').addClass('animated fadeInUp'); 
+            }
+
+            $(function(){
+                $('.tooltip').tooltipster({
+                    theme: 'tooltipster-shadow',
+                    delay: '0'
+                });
+                $('.destroy').tooltipster({
+                    theme: 'tooltipster-warning',
+                    speed: '0',
+                    delay: '0'
+                });
+
+                animateIntro();
+
+                $(".tab").click(function(event){
+                    $('.tab').removeClass('selected');
+                    $('.bt').css('background-color', '#7ec172');
+                    if($(this).hasClass('bt')){
+                        $(this).css('background-color', '#ACDE78');
+                    } else {
+                        $(this).addClass('selected');
+                    }
+
+                    event.preventDefault();
+                    //calculate destination place
+                    var dest=0;
+                    if($(this.hash).offset().top > $(document).height()-$(window).height()){
+                      dest=$(document).height()-$(window).height();
+                    }else{
+                      dest=$(this.hash).offset().top;
+                    }
+                    //go to destination
+                    $('html,body').animate({scrollTop:dest}, 400,'swing');
+                });
+
+                $('.destroy').click(function(){
+                    $(this).addClass('buttonOff').tooltipster('hide');
+                    $('.twitter-logo').css('visibility', 'hidden');
+                    $('.collapse').addClass('animated bounceOutDown');
+                    $('footer').addClass('animated bounceOutDown');
+                    $('body').css('background', 'black');
+                    $('a').addClass('animated hinge');
+                    $('.unhinge').addClass('animated hinge').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                        setTimeout(function(){
+                            $('.unhinge').removeClass('animated hinge');
+                            $('.twitter-logo').css('visibility', 'visible');
+                            $('.collapse').removeClass('animated bounceOutDown');
+                            $('footer').removeClass('animated bounceOutDown');
+                            $('body').css('background', 'white');
+                            $('a').removeClass('animated hinge');
+                            $('.destroy').removeClass('buttonOff');
+                            $('.tab').removeClass('selected');
+                            $('#contact').css('background-color', '#ACDE78');
+                        }, 2000);
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
